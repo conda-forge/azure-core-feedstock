@@ -5,7 +5,7 @@ Home: https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/core/azure-c
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Microsoft Azure Core Library for Python
 
