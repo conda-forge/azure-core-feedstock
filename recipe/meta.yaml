@@ -1,5 +1,5 @@
 {% set name = "azure-core" %}
-{% set version = "1.12.0" %}
+{% set version = "1.14.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.zip
-  sha256: adf2b1c6ef150a92295b4b405f982a9d2c55c4846728cb14760ca592acbb09ec
+  sha256: f32bb64aabe61f496255c16dd6c555a027da628109460bf27311cee0caf78f96
 
 build:
   number: 0
