@@ -1,5 +1,5 @@
 {% set name = "azure-core" %}
-{% set version = "1.29.5" %}
+{% set version = "1.29.7" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 52983c89d394c6f881a121e5101c5fa67278ca3b1f339c8fb2ef39230c70e9ac
+  sha256: 2944faf1a7ff1558b1f457cabf60f279869cabaeef86b353bed8eb032c7d8c5e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,7 +21,7 @@ requirements:
     - python >=3.7
   run:
     - python >=3.7
-    - requests >=2.18.4
+    - requests >=2.21.0
     - six >=1.11.0
     - typing-extensions >=4.6.0
 
