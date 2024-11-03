@@ -3,7 +3,7 @@ About azure-core-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-core-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/core/azure-core
+Home: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/core/azure-core
 
 Package license: MIT
 
