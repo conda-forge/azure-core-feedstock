@@ -1,29 +1,29 @@
 {% set name = "azure-core" %}
 {% set version = "1.31.0" %}
 
-
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/azure_core-{{ version }}.tar.gz
   sha256: 656a0dd61e1869b1506b7c6a3b31d62f15984b1a573d6326f6aa2f3e4123284b
 
 build:
-  number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+  number: 1
 
 requirements:
   host:
+    - python {{ python_min }}
     - pip
-    - python >=3.7
+    - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - requests >=2.21.0
     - six >=1.11.0
-    - typing-extensions >=4.6.0
+    - typing_extensions >=4.6.0
 
 test:
   imports:
@@ -33,12 +33,13 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
-  home: https://github.com/Azure/azure-sdk-for-python/tree/master/sdk/core/azure-core
+  home: https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/core/azure-core
   summary: Microsoft Azure Core Library for Python
   license: MIT
-  license_file: LICENSE.txt
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
