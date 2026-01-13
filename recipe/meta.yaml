@@ -1,5 +1,5 @@
 {% set name = "azure-core" %}
-{% set version = "1.37.0" %}
+{% set version = "1.38.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/azure_core-{{ version }}.tar.gz
-  sha256: 7064f2c11e4b97f340e8e8c6d923b822978be3016e46b7bc4aa4b337cfb48aee
+  sha256: 8194d2682245a3e4e3151a667c686464c3786fed7918b394d035bdcd61bb5993
 
 build:
   noarch: python
